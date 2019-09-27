@@ -34,4 +34,8 @@ public class Flight {
     public String flightDepartureAirport() {
         return this.departureAirport;
     }
+
+    public String flightDepartureTimeCheck() {
+        return this.departureTime;
+    }
 }
