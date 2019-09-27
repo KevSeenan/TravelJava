@@ -40,7 +40,9 @@ public class Flight {
     }
 
     public void addPassenger(Passenger passenger) {
-        this.passengers.add(passenger);
+        if(this.passengerCount() < this.availableSeatsCheck()){
+            this.passengers.add(passenger);  
+        }
     }
 
     public void removePassenger(Passenger passenger) {
