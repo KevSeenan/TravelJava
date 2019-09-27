@@ -30,4 +30,8 @@ public class Flight {
     public String flightDestinationCheck() {
         return this.destination;
     }
+
+    public String flightDepartureAirport() {
+        return this.departureAirport;
+    }
 }

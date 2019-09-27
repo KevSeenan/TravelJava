@@ -36,4 +36,10 @@ public class FlightTest {
         assertEquals("LHR", flight.flightDestinationCheck());
     }
 
+    @Test
+    public void flightHasADepartureAirport() {
+        assertNotNull(flight);
+        assertEquals("GLA", flight.flightDepartureAirport());
+    }
+
 }
