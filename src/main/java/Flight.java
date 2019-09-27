@@ -38,4 +38,8 @@ public class Flight {
     public String flightDepartureTimeCheck() {
         return this.departureTime;
     }
+
+    public void addPassenger(Passenger passenger) {
+        this.passengers.add(passenger);
+    }
 }

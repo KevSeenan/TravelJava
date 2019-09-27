@@ -48,4 +48,12 @@ public class FlightTest {
         assertEquals("20.00", flight.flightDepartureTimeCheck());
     }
 
+    @Test
+    public void canAddAPassenger() {
+        assertNotNull(flight);
+        assertNotNull(passenger);
+        flight.addPassenger(passenger);
+        assertEquals(1, flight.passengerCount());
+    }
+
 }
