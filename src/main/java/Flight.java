@@ -22,4 +22,8 @@ public class Flight {
     public int passengerCount() {
         return this.passengers.size();
     }
+
+    public String flightNumberCheck() {
+        return this.flightNumber;
+    }
 }

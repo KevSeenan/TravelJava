@@ -24,4 +24,10 @@ public class FlightTest {
         assertEquals(0, flight.passengerCount());
     }
 
+    @Test
+    public void flightHasANumber() {
+        assertNotNull(flight);
+        assertEquals("LHR243", flight.flightNumberCheck());
+    }
+
 }
