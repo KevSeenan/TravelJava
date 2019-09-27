@@ -26,8 +26,12 @@ public class PlaneTest {
     public void planeHasACapacity() {
         assertNotNull(plane);
         assertEquals(5, plane.getCapacity());
+    }
 
-
+    @Test
+    public void planeHasAMaximumWeight() {
+        assertNotNull(plane);
+        assertEquals(200, plane.getWeight());
     }
 
 }
