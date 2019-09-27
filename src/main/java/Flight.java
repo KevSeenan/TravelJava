@@ -52,4 +52,12 @@ public class Flight {
     public int availableSeatsCheck() {
         return this.plane.getCapacity() - this.passengerCount();
     }
+
+    public Plane getPlane() {
+        return plane;
+    }
+
+    public void setPlane(Plane plane) {
+        this.plane = plane;
+    }
 }
