@@ -26,4 +26,8 @@ public class Flight {
     public String flightNumberCheck() {
         return this.flightNumber;
     }
+
+    public String flightDestinationCheck() {
+        return this.destination;
+    }
 }
