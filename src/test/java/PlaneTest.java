@@ -22,4 +22,12 @@ public class PlaneTest {
         assertEquals(PlaneType.BOEING747, plane.getType());
     }
 
+    @Test
+    public void planeHasACapacity() {
+        assertNotNull(plane);
+        assertEquals(5, plane.getCapacity());
+
+
+    }
+
 }

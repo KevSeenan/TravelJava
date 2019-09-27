@@ -1,6 +1,8 @@
 public class Plane {
 
     private PlaneType planeType;
+    private Plane plane;
+
 
     public Plane(PlaneType planeType) {
         this.planeType = planeType;
@@ -9,5 +11,9 @@ public class Plane {
 
     public PlaneType getType() {
         return planeType;
+    }
+
+    public int getCapacity() {
+        return planeType.getCapacity();
     }
 }
