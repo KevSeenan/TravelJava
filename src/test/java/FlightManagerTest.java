@@ -29,4 +29,15 @@ public class FlightManagerTest {
         assertEquals(20, flightManager.reservedBaggageWeight());
 
     }
+
+    @Test
+    public void canCalculateBaggageWeightBookedByPassengers() {
+        assertNotNull(flight);
+        assertNotNull(plane);
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(30, flightManager.passengerBaggageWeight());
+
+    }
 }

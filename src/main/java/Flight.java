@@ -60,4 +60,12 @@ public class Flight {
     public void setPlane(Plane plane) {
         this.plane = plane;
     }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public void setPassengers(ArrayList<Passenger> passengers) {
+        this.passengers = passengers;
+    }
 }
