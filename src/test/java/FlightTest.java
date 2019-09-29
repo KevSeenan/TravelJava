@@ -1,5 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
+import sun.util.calendar.LocalGregorianCalendar;
+
+import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -9,11 +12,12 @@ public class FlightTest {
     Flight flight;
     Plane plane;
     Passenger passenger, passenger2, passenger3;
+    Date date;
 
     @Before
     public void setUp() {
         plane = new Plane(PlaneType.BOEING747);
-        flight = new Flight(plane,"LHR243","LHR","GLA","20.00");
+        flight = new Flight(plane,"LHR243","LHR","GLA", this.date);
         passenger = new Passenger("Jim Seenan",2);
         passenger2 = new Passenger("Gerry Seenan",3);
         passenger3 = new Passenger("Kathleen Seenan",1);
@@ -47,7 +51,7 @@ public class FlightTest {
     @Test
     public void flightHasADepertureTime() {
         assertNotNull(flight);
-        assertEquals("20.00", flight.flightDepartureTimeCheck());
+        assertEquals(this.date, flight.flightDepartureTimeCheck());
     }
 
     @Test

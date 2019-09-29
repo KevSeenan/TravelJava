@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dab64cc0-3388-40b3-b976-5cfa3e66401a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FlightTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FlightManagerTest">
+  <component name="RunManager" selected="JUnit.FlightTest">
     <configuration name="All in TravelJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TravelJava" />
       <option name="PACKAGE_NAME" value="" />
@@ -93,9 +93,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FlightTest" />
         <item itemvalue="JUnit.FlightManagerTest" />
         <item itemvalue="JUnit.All in TravelJava" />
-        <item itemvalue="JUnit.FlightTest" />
         <item itemvalue="JUnit.PlaneTest" />
       </list>
     </recent_temporary>
