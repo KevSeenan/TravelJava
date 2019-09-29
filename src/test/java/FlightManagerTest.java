@@ -26,7 +26,7 @@ public class FlightManagerTest {
         assertNotNull(flight);
         assertNotNull(plane);
         flight.addPassenger(passenger);
-        assertEquals(20, flightManager.reservedBaggageWeight());
+        assertEquals(30, flightManager.reservedBaggageWeight());
 
     }
 
@@ -38,6 +38,15 @@ public class FlightManagerTest {
         flight.addPassenger(passenger2);
         flight.addPassenger(passenger3);
         assertEquals(30, flightManager.passengerBaggageWeight());
+    }
 
+    @Test
+    public void canCalculateRemainingReservedWeightForBaggage() {
+        assertNotNull(flight);
+        assertNotNull(plane);
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(0, flightManager.remainingBaggageWeight());
     }
 }

@@ -29,4 +29,8 @@ public class FlightManager {
         }
         return this.bagWeight * numberOfBags;
     }
+
+    public int remainingBaggageWeight() {
+        return reservedBaggageWeight() - passengerBaggageWeight();
+    }
 }
